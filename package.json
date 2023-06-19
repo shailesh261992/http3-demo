@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
+    "clean": "rm -rf dist",
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite -c multiChunk.vite.config.js build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite -c multiChunk.vite.config.js preview"
   },
   "dependencies": {
     "@cloudscape-design/components": "^3.0.312",
